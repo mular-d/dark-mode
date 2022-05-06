@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #10171d;
+  color: #dfdfdf;
+
+  .navbar {
+    background-color: #1b2938;
+  }
+
+  .dark-mode-toggle > button {
+    color: #999;
+    &:last-child {
+      color: lightblue;
+    }
+  }
+}
+
+.dark-mode-toggle {
+  display: flex;
+  margin: 0 auto;
+  & > button {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: #ffe600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:last-child {
+      color: #666;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
